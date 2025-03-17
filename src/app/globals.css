@@ -14,27 +14,15 @@
   --breakpoint-lg: "984px",
   --breakpoint-xl: "1240px",
   --breakpoint-2xl: "1496px",
-  --color-primary: #121315;
   --color-secondary: #666666;
   --color-accent: #ffca3b;
   --color-border: #d7d7d7;
   --shadow-default: 0 4px 54px 10px rgba(18, 19, 21, 0.6);
 }
 
-@layer base {
-  :root {
-    --container-center: true;
-    --container-padding: 1rem;
-  }
-
-  body {
-    background-color: #fcfbfc;
-    overflow-x: hidden;
-  }
-}
 
 .container{
-  @apply px-4 flex items-center
+  @apply mx-auto flex items-center px-4;
 }
 /* h1,h2,h3,h4,h5,h6{
   @apply text-primary font-primary;
