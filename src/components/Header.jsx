@@ -1,7 +1,9 @@
 "use client";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { Link } from "react-scroll";
+//components
 import Logo from "./Logo";
+import NavMobile from "./NavMobile";
 const links = [
   { name: "home", path: "home" },
   { name: "about", path: "about" },
@@ -29,10 +31,7 @@ const Header = () => {
                     <Link
                       to={link.path}
                       smooth={true}
-                      and
                       spy={true}
-                      //className="cursor-pointer"
-                      //activeClass="text-gray-400"
                       activeClass="text-accent"
                     >
                       {link.name}
@@ -51,6 +50,10 @@ const Header = () => {
               </div>
             </button>
           </nav>
+          {/* nav mobile */}
+          <div className="xl:hidden">
+            <NavMobile />
+          </div>
         </div>
       </div>
     </header>
