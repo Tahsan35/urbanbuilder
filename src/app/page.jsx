@@ -1,3 +1,6 @@
+"use client";
+import { useEffect, useState } from "react";
+
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -11,6 +14,21 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Home = () => {
+  const [headerActive, setHeaderActive] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setHeaderActive(true);
+      } else {
+        setHeaderActive(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div>
       <Topbar />
