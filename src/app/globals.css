@@ -1,13 +1,6 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 
-@layer components {
-  .bg-custom-image {
-    background-image: url('/public//assets_2//img/hero/bg.jpg');
-  }
-}
-
-
 @theme {
   --breakpoint-sm: "600px",
   --breakpoint- md: "728px",
