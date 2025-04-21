@@ -12,7 +12,7 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <footer className="mt-16 xl:mt-32 bg-black">
+    <footer className="pt-8 xl:pt-16 bg-black">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-12">
           {/* Logo and info */}
@@ -46,17 +46,30 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <RiMailFill className="text-accent" />
-                  <p>info@urbanbuilder.com</p>
+                  <p>md.shakil.developer@gmail.com</p>
                 </div>
               </div>
             </div>
+          </div>
+          {/* Newsletter */}
+          <div className="flex-1 text-border">
+            <h4 className="h4 text-white mb-10">Newsletter</h4>
 
-            {/* Quick links */}
+            <form className="flex items-center gap-4">
+              <input
+                className="bg-transparent border border-white/10 w-full py-3 px-4 text-sm outline-none"
+                type="text"
+                placeholder="Your email"
+              />
+              <button className="btn btn-sm">
+                <RiArrowRightLine className="text-lg" />
+              </button>
+            </form>
           </div>
         </div>
       </div>
 
-      <div className=" pl-4 py-6 mt-12 border-t border-white/10 text-border flex flex-col">
+      <div className=" pl-4 py-6 mt-12 border-t border-white/10 text-border flex flex-col justify-center">
         <Socials
           containerStyles="flex gap-4 justify-center"
           iconStyles="text-white text-lg hover:text-accent transition-all"
