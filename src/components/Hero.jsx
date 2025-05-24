@@ -1,33 +1,18 @@
-import Image from "next/image";
 import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Image (optimized) */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/assets_2/img/hero/bg.jpg" // Update path
-          alt="Construction Site"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40"></div> {/* Overlay */}
-      </div>
-
+    <section className="relative h-[80vh] bg-[url('/assets_2/img/hero/bg.jpg')] bg-cover bg-center bg-no-repeat">
       {/* Content */}
-      <div className="container mx-auto flex h-full flex-col justify-center px-4 text-white">
-        <div className="max-w-2xl">
-          <h1 className="mb-4 text-5xl font-bold md:text-6xl lg:text-7xl">
-            URBAN<span className="text-yellow-400">BUILD</span>
+      <div className="absolute inset-0 bg-gradient-to-l from-black/0 via-black/50 to-black/70 z-10"></div>
+      <div className="container h-full flex items-center">
+        <div className="z-20 mx-5">
+          <h1 className="h1 text-white mb-4">
+            <span className="text-accent"> Building </span>rebust lusting
+            solutions
           </h1>
 
-          <h2 className="mb-6 text-2xl font-semibold text-yellow-400 md:text-3xl">
-            BUILDING ROBUST LASTING SOLUTIONS
-          </h2>
-
-          <p className="mb-8 text-lg leading-relaxed md:text-xl">
+          <p className=" text-amber-100 mb-8 text-lg md:text-xl">
             From concept to completion, we ensure every detail is optimized for
             strength and endurance, creating solutions that inspire confidence
             and stand firm for years.
