@@ -1,6 +1,6 @@
 "use client";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 //components
 import Logo from "./Logo";
 import NavMobile from "./NavMobile";
@@ -13,11 +13,13 @@ const links = [
 ];
 const Header = () => {
   return (
-    <header className="bg-black py-4 text-gray-400">
-      <div className="container mx-auto">
-        <div className="flex items-center justify-between w-full">
+    <header className="bg-primary py-4 sticky top-0">
+      <div className="container">
+        <div className="flex items-center justify-between">
           {/* logo */}
-          <Logo />
+          <div>
+            <Logo />
+          </div>
 
           {/* nav and btn */}
           <nav className="hidden xl:flex items-center gap-10">
@@ -26,23 +28,24 @@ const Header = () => {
                 return (
                   <li
                     key={index}
-                    className="cursor-pointer text-white text-sm uppercase font-medium tracking-[1.2px] after:content-['/'] after:px-4 last:after:content-none"
+                    className="text-white text-sn uppercase font-primary font-medium tracking-[1.2px] after:content-['/'] after:mx-4 last:after:content-none after:text-accent after:text-[12px]"
                   >
-                    <Link
+                    <ScrollLink
                       to={link.path}
                       smooth={true}
                       spy={true}
+                      className="cursor-pointer"
                       activeClass="text-accent"
                     >
                       {link.name}
-                    </Link>
+                    </ScrollLink>
                   </li>
                 );
               })}
             </ul>
             {/* btn */}
             <button className="w-[200px] h-[54px] py-[5px] pl-[10px] pr-[5px] flex items-center justify-center min-w-[200px] group bg-white rounded-l-2xl">
-              <div className="flex-1 text-center tracking-[1.2px] font-bold text-black text-sm font-serif uppercase">
+              <div className="flex-1 text-center tracking-[1.2px] font-primary font-bold text-primary text-sm uppercase">
                 Get a quote
               </div>
               <div className="w-11 h-11 bg-black flex items-center justify-center">

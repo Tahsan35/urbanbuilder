@@ -1,6 +1,7 @@
 import React from "react";
 import FaqItem from "./FaqItem";
 import Pretitle from "./Pretitle";
+import { motion } from "framer-motion"; // Import motion
 
 const faqItemsData = [
   {
@@ -65,7 +66,8 @@ const Faq = () => {
         {/* faq items */}
         <ul className="w-full flex flex-col">
           {faqItemsData.map((item, index) => (
-            <li
+            // Use motion.li instead of li
+            <motion.li
               key={index}
               className="mb-6"
               variants={faqItemVariants}
@@ -74,7 +76,7 @@ const Faq = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <FaqItem title={item.title} description={item.description} />
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>

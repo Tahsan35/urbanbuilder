@@ -29,19 +29,33 @@ const Home = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Define the sections of your page as an array of objects
+  // Each object contains the Component and an optional props object
+  const pageSections = [
+    { Component: Topbar, name: "Topbar" },
+    // Assuming headerActive state is for the Header component
+    {
+      Component: Header,
+      name: "Header",
+      props: { headerActive: headerActive },
+    },
+    { Component: Hero, name: "Hero" },
+    { Component: About, name: "About" },
+    { Component: Stats, name: "Stats" },
+    { Component: Services, name: "Services" },
+    { Component: Work, name: "Work" },
+    { Component: Testimonials, name: "Testimonials" },
+    { Component: Faq, name: "Faq" },
+    { Component: Contact, name: "Contact" },
+    { Component: Footer, name: "Footer" },
+  ];
+
   return (
     <div>
-      <Topbar />
-      <Header />
-      <Hero />
-      <About />
-      <Stats />
-      <Services />
-      <Work />
-      <Testimonials />
-      <Faq />
-      <Contact />
-      <Footer />
+      {pageSections.map(({ Component, name, props }) => (
+        <Component key={name} {...props} />
+      ))}
     </div>
   );
 };

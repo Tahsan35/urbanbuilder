@@ -28,6 +28,7 @@ const About = () => {
                   src="/assets_2/img/about/signature.svg"
                   width={154}
                   height={38}
+                  alt="Company CEO Signature"
                 />
                 <p>Company CEO</p>
               </div>
@@ -46,6 +47,7 @@ const About = () => {
                 src={"/assets_2/img/about/img.jpg"}
                 width={444}
                 height={493}
+                alt="About Company"
               />
             </div>
           </div>

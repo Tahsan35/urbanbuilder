@@ -1,34 +1,55 @@
 @import "tailwindcss";
-@plugin "tailwindcss-animate";
 
-@theme {
-  --breakpoint-sm: "600px",
-  --breakpoint- md: "728px",
-  --breakpoint-lg: "984px",
-  --breakpoint-xl: "1240px",
-  --breakpoint-2xl: "1496px",
+:root {
+  /* Corrected breakpoint definitions (no quotes around pixel values) */
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 728px; /* Corrected naming */
+  --breakpoint-lg: 984px;
+  --breakpoint-xl: 1240px;
+  --breakpoint-2xl: 1496px;
+
+  /* Color definitions are fine */
+
+  --color-primary: #121315;
   --color-secondary: #666666;
   --color-accent: #ffca3b;
   --color-border: #d7d7d7;
   --shadow-default: 0 4px 54px 10px rgba(18, 19, 21, 0.6);
+  --font-primary: "dmSans"; /* Define your primary font */
+  --font-secondary: "barlow"; /* Define a secondary font if needed */
 }
 
-
-.container{
-  @apply mx-auto flex items-center px-4;
-}
-/* h1,h2,h3,h4,h5,h6{
-  @apply text-primary font-primary;
+/* body {
+  @apply font-primary;
 } */
-.h1{
-  @apply text-[40px] xl:text-[54px] uppercase font-black leading-[1.1];
+
+body {
+  font-family: var(--font-primary);
 }
-.h2{
-  @apply text-[36px] xl:text-[46px] leading-[1.3] xl:leading-[56px] capitalize font-bold;
+@theme {
+  --color-primary: #121315;
 }
-.h3{
-  @apply  font-bold text-3xl;
-}
-.h4{
-  @apply text-2xl font-semibold;
+
+@layer components {
+  .container {
+    @apply w-full mx-auto px-4;
+  }
+
+  .h1 {
+    @apply text-[40px] xl:text-[54px] uppercase font-black leading-[1.1];
+    /* If you want h1 to use a different font, you can set it here: */
+    /* font-family: var(--font-secondary); */
+  }
+
+  .h2 {
+    @apply text-[36px] xl:text-[46px] leading-[1.3] xl:leading-[56px] capitalize font-bold;
+  }
+
+  .h3 {
+    @apply font-bold text-3xl;
+  }
+
+  .h4 {
+    @apply text-2xl font-semibold;
+  }
 }

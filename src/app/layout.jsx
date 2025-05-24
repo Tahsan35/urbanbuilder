@@ -18,6 +18,7 @@ const barlow = Barlow({
 export const metadata = {
   title: "Urban Builder",
   description: "Modern construction and urban development solutions",
+  icons: [{ url: "/urban.png" }],
 };
 
 export default function RootLayout({ children }) {
