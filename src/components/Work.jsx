@@ -33,7 +33,7 @@ const workData = [
 const Work = () => {
   return (
     <div className="pt-16 xl:pt-32" id="projects">
-      <div className="container mx-auto">
+      <div className="container">
         <div className="text-center max-w-[540px] mx-auto xl:mb-20">
           <Pretitle text="Our work" center />
           <h2 className="h2 mb-3">Discover Our Projects</h2>

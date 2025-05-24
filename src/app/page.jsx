@@ -14,7 +14,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Home = () => {
-  const [headerActive, setHeaderActive] = useState(false);
+  const [headerActive, setHeaderActive] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {

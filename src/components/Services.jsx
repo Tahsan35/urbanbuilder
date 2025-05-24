@@ -106,7 +106,7 @@ const Services = () => {
 
   return (
     <section className="pt-16 xl:pt-32" id="services">
-      <div className="container mx-auto">
+      <div className="container">
         <div className="text-center max-w-[540px] mx-auto mb-20">
           <Pretitle text="Our Services" center />
           <h2 className="h2 mb-3">Solutions We Provide</h2>
@@ -132,8 +132,8 @@ const Services = () => {
                   <div
                     className={`w-[100px] h-[100px] flex items-center justify-center absolute left-0 ${
                       activeTab === item.name
-                        ? "bg-black text-white"
-                        : "bg-accent text-black"
+                        ? "bg-primary text-white"
+                        : "bg-accent text-primary"
                     }`}
                   >
                     <div>{item.icon}</div>
@@ -171,7 +171,7 @@ const Services = () => {
                         {item.serviceList.map((service, index) => (
                           <li key={index} className="flex items-center gap-4">
                             <div className="w-[6px] h-[6px] bg-accent"></div>
-                            <div className="capitalize font-medium text-black">
+                            <div className="capitalize font-medium text-primary">
                               {service}
                             </div>
                           </li>
