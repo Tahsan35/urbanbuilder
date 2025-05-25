@@ -15,8 +15,7 @@ const workData = [
   {
     img: "/assets_2/img/work/construction.jpg",
     category: "construction",
-    description:
-      " Construction project in downtown area with modern design.we are provide best services to our clients.",
+    description: " Construction project in downtown area with modern design.",
   },
   {
     img: "/assets_2/img/work/renovation.jpg",

@@ -13,7 +13,7 @@ const links = [
 ];
 const Header = () => {
   return (
-    <header className="bg-primary py-4 sticky top-0">
+    <header className="bg-primary py-4 sticky top-0 z-50">
       <div className="container">
         <div className="flex items-center justify-between">
           {/* logo */}
