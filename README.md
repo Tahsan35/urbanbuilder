@@ -2,7 +2,7 @@
 
 [md.shakil.developer@gmail.com](mailto:md.shakil.developer@gmail.com) | [LinkedIn Profile URL](https://www.linkedin.com/in/md-shakil-5581281b7/) | [GitHub Profile URL](https://github.com/Tahsan35) | +8801623443703
 
-**UrbanBuilder ** | [Link to Project](https://trip-bazaarlandingpage.vercel.app/) || [Link to Project Code](https://github.com/Tahsan35/urbanbuilder)
+**UrbanBuilder ** | [Link to Project](https://urbanbuilder.vercel.app/) || [Link to Project Code](https://github.com/Tahsan35/urbanbuilder)
 
 ## Summary
 
