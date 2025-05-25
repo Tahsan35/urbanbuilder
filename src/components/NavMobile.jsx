@@ -1,5 +1,5 @@
-"use clint";
-import { useState } from "react";
+"use client";
+import { useState } from "react"; // Added useEffect for potential event debugging
 import {
   Sheet,
   SheetContent,
@@ -11,7 +11,7 @@ import {
 import { RiMenu3Fill } from "react-icons/ri";
 import Logo from "./Logo";
 import Socials from "./Socials";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll"; // Import Events for debugging if needed
 
 const links = [
   { name: "home", path: "home" },
@@ -23,6 +23,7 @@ const links = [
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger
@@ -53,7 +54,7 @@ const NavMobile = () => {
                     to={link.path}
                     smooth={true}
                     spy={true}
-                    activeClass="text-accent"
+                    activeClass="text-accent" // This is your active class
                     className="cursor-pointer"
                     onClick={() => setIsOpen(false)}
                   >
@@ -63,16 +64,9 @@ const NavMobile = () => {
               );
             })}
           </ul>
-          {/* <Socials /> */}
           <Socials containerStyles="text-white text-xl flex gap-6" />
         </div>
       </SheetContent>
-      {/* <SheetTrigger
-        className="text-white text-3xl flex items-center justify-items-center"
-        onClick={() => setIsOpen(true)}
-      >
-        <RiMenu3Fill />
-      </SheetTrigger> */}
     </Sheet>
   );
 };

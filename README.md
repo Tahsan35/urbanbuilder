@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MD SHAKIL
 
-## Getting Started
+[md.shakil.developer@gmail.com](mailto:md.shakil.developer@gmail.com) | [LinkedIn Profile URL](https://www.linkedin.com/in/md-shakil-5581281b7/) | [GitHub Profile URL](https://github.com/Tahsan35) | +8801623443703
 
-First, run the development server:
+**UrbanBuilder ** | [Link to Project](https://trip-bazaarlandingpage.vercel.app/) || [Link to Project Code](https://github.com/Tahsan35/urbanbuilder)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Summary
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+UrbanBuilder is a modern web application built with Next.js and React, designed to showcase services, company information, and provide a seamless user experience. It features a responsive design, smooth animations, and a component-based architecture for easy maintenance and scalability.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js (v15+)
+- **UI Library**: React (v19+)
+- **Styling**: Tailwind CSS (v4+)
+- **UI Components**: shadcn-ui
+- **Animation**: Framer Motion
+- **Icons**: Lucide React, React Icons
+- **Scrolling**: React Scroll
+- **Sliders/Carousels**: Swiper
+- **Number Animations**: React CountUp
+- **Linting**: ESLint
+- **Package Manager**: npm
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+Based on the project components, UrbanBuilder likely includes the following features:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Hero Section**: Engaging introductory content.
+- **About Us**: Information about the company or project.
+- **Services**: Details about services offered.
+- **Statistics**: Display key metrics or achievements.
+- **Testimonials**: Showcase client feedback.
+- **FAQ Section**: Answers to frequently asked questions.
+- **Our Work/Portfolio**: Display of projects or work samples.
+- **Contact Form**: Allows users to get in touch.
+- **Responsive Navigation**: Including a mobile-friendly navigation menu.
+- **Header & Footer**: Consistent branding and navigation elements.
+- **Top Bar**: Potentially for announcements or secondary navigation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+The project follows a standard Next.js App Router structure:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app/`: Contains the main application logic, including `layout.jsx` (global layout) and `page.jsx` (main page).
+- `src/components/`: Houses reusable UI components used throughout the application.
+- `src/lib/`: Likely contains utility functions (e.g., `utils.js`).
+- `public/`: Stores static assets like images and icons.
