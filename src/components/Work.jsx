@@ -58,8 +58,8 @@ const Work = () => {
                 alt=""
                 quality={100}
               />
-              <div className="w-[90%] h-[84px] bg-black absolute bottom-4 flex justify-between items-center text-white md:translate-y-[108px] md:group-hover:translate-y-0 transition-all duration-500">
-                <div className="pl-8">
+              <div className="w-[90%] h-[84px] bg-primary absolute bottom-4 flex justify-between items-center text-white md:translate-y-[108px] md:group-hover:translate-y-0 transition-all duration-500">
+                <div className="pl-8 pr-16 xl:pr-20">
                   <h4 className="text-white font-semibold uppercase tracking-[1px]">
                     {item.category}
                   </h4>
@@ -70,7 +70,7 @@ const Work = () => {
                 </div>
                 <Link
                   href={item.href || "#"}
-                  className="w-[44px] xl:w-[60px] xl:h-[60px] h-[44px] bg-accent text-black text-2xl flex justify-center items-center absolute right-3"
+                  className="w-[44px] xl:w-[60px] xl:h-[60px] h-[44px] bg-accent text-primary text-2xl flex justify-center items-center absolute right-3"
                 >
                   <RiArrowRightUpLine />
                 </Link>

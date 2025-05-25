@@ -102,7 +102,7 @@ const serviceData = [
   },
 ];
 const Services = () => {
-  const [activeTab, setActiveTab] = useState("construction");
+  const [activeTab, setActiveTab] = useState("Construction"); // Changed to uppercase 'C'
 
   return (
     <section className="pt-16 xl:pt-32" id="services">

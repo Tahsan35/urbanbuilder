@@ -14,7 +14,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Home = () => {
-  const [headerActive, setHeaderActive] = useState(true);
+  const [headerActive, setHeaderActive] = useState(false); // Initial state is false, which is good.
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,11 +30,8 @@ const Home = () => {
     };
   }, []);
 
-  // Define the sections of your page as an array of objects
-  // Each object contains the Component and an optional props object
   const pageSections = [
     { Component: Topbar, name: "Topbar" },
-    // Assuming headerActive state is for the Header component
     {
       Component: Header,
       name: "Header",
