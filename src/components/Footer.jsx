@@ -13,7 +13,7 @@ import Socials from "./Socials";
 const Footer = () => {
   return (
     <footer className="pt-8 xl:pt-16 bg-black">
-      <div className="container mx-auto">
+      <div className="container">
         <div className="flex flex-col xl:flex-row gap-12">
           {/* Logo and info */}
           <div className="flex-1">
@@ -50,21 +50,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
-          {/* Newsletter */}
-          <div className="flex-1 text-border">
-            <h4 className="h4 text-white mb-10">Newsletter</h4>
-
-            <form className="flex items-center gap-4">
-              <input
-                className="bg-transparent border border-white/10 w-full py-3 px-4 text-sm outline-none"
-                type="text"
-                placeholder="Your email"
-              />
-              <button className="btn btn-sm">
-                <RiArrowRightLine className="text-lg" />
-              </button>
-            </form>
           </div>
         </div>
       </div>

@@ -26,8 +26,8 @@ const Stats = () => {
   const inView = useInView(ref, { threshold: 0.2 });
 
   return (
-    <div ref={ref} className="mt-16 xl:mt-32 bg-black py-10 w-full">
-      <div className="container mx-auto h-full">
+    <div ref={ref} className="mt-16 xl:mt-32 bg-primary py-12 w-full">
+      <div className="container flex justify-around">
         <div className="text-white flex flex-col items-center justify-between xl:flex-row h-full gap-12 text-center xl:text-left">
           {statsData.map((item, index) => {
             return (
